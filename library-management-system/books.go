@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 type Book struct {
 	ISBN string
 	Authors []string
@@ -27,4 +31,7 @@ type BookItem struct {
 type Rack struct {
 	Number uint
 	LocationID string
+}
+
+func (b BookItem) CheckOut() bool {
 }
